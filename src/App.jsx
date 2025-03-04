@@ -1,53 +1,54 @@
-import React from 'react'
+import React from "react";
 import "./App.css";
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
-import Applayout from './assets/components/Applayout';
-import Home from './assets/pages/Home';
-import About from './assets/pages/About';
-import Country from './assets/pages/Country';
-import Contact from './assets/pages/Contact';
-import Error from './assets/pages/Error';
-
-
+import {
+  createBrowserRouter,
+  Link,
+  Router,
+  RouterProvider,
+} from "react-router-dom";
+import Applayout from "./assets/components/Applayout";
+import Home from "./assets/pages/Home";
+import About from "./assets/pages/About";
+import Country from "./assets/pages/Country";
+import Contact from "./assets/pages/Contact";
+import Error from "./assets/pages/Error";
+import { toast, ToastContainer } from "react-toastify";
 
 const App = () => {
-  const router= createBrowserRouter([
+  const router = createBrowserRouter([
     {
-      path:"/",
-      element: <Applayout/>,
-      errorElement:<Error/>,
-      children:[
+      path: "/",
+      element: <Applayout />,
+      errorElement: <Error />,
+      children: [
         {
           path: "/",
-          element:<Home/>
+          element: <Home />,
         },
         {
           path: "/about",
-          element:<About/>
+          element: <About />,
         },
         {
           path: "/country",
-          element:<Country/>
+          element: <Country />,
         },
         {
           path: "/contact",
-          element:<Contact/>
+          element: <Contact />,
         },
-        // {
-        //   path: "/*",
-        //   element:<Error/>
-        // },
-        
-      
-      ]
-    }
-  ])
+      ],
+    },
+  ]);
+
+  const notify = () => toast("Easy in the thing ");
 
   return (
     <div>
-     <RouterProvider router={router}/>
+      <RouterProvider router={router} />
+      
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
