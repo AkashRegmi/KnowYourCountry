@@ -33,11 +33,13 @@ const App = () => {
           path: "/country",
           element: <Country />,
         },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
+       
       ],
+      
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
     },
   ]);
 
