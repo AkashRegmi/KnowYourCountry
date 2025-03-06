@@ -32,7 +32,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" >
       {/* Carousel Wrapper */}
       <div className="carousel-wrapper">
         {images.map((image, index) => (

@@ -9,12 +9,10 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
-  const navigate= useNavigate();
-
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    
   };
 
   const handleSubmit = (e) => {
@@ -22,11 +20,10 @@ const ContactForm = () => {
     console.log("Form Data:", formData);
     alert("Your response has been recorded.");
     setFormData({ name: "", email: "", message: "" });
-    navigate("/")
+    navigate("/");
   };
 
   return (
-    
     <div
       style={{
         display: "flex",
@@ -95,7 +92,6 @@ const ContactForm = () => {
           }}
         />
 
-       
         <Button
           variant="contained"
           type="submit"
@@ -109,8 +105,7 @@ const ContactForm = () => {
           }}
         >
           Send
-        </Button> 
-        
+        </Button>
       </form>
     </div>
   );

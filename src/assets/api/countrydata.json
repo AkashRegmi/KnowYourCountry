@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Nepal",
+      "capital": "Kathmandu",
+      "currency": "Nepalese Rupee (NPR)",
+      "interesting_fact": "Nepal is home to Mount Everest, the highest peak in the world."
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "capital": "Tokyo",
+      "currency": "Japanese Yen (JPY)",
+      "interesting_fact": "Japan has more than 6,800 islands, with Honshu being the largest."
+    },
+    {
+      "id": 3,
+      "name": "Canada",
+      "capital": "Ottawa",
+      "currency": "Canadian Dollar (CAD)",
+      "interesting_fact": "Canada has the longest coastline of any country in the world."
+    },
+    {
+      "id": 4,
+      "name": "Australia",
+      "capital": "Canberra",
+      "currency": "Australian Dollar (AUD)",
+      "interesting_fact": "Australia is the only country that is also a continent."
+    },
+    {
+      "id": 5,
+      "name": "Brazil",
+      "capital": "Brasília",
+      "currency": "Brazilian Real (BRL)",
+      "interesting_fact": "Brazil is home to the Amazon Rainforest, the largest rainforest in the world."
+    },
+    {
+      "id": 6,
+      "name": "Germany",
+      "capital": "Berlin",
+      "currency": "Euro (EUR)",
+      "interesting_fact": "Germany is known for its Autobahn, which has some sections with no speed limits."
+    },
+    {
+      "id": 7,
+      "name": "South Africa",
+      "capital": "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)",
+      "currency": "South African Rand (ZAR)",
+      "interesting_fact": "South Africa has three capital cities, each serving a different function."
+    },
+    {
+      "id": 8,
+      "name": "India",
+      "capital": "New Delhi",
+      "currency": "Indian Rupee (INR)",
+      "interesting_fact": "India is the world's largest democracy with over 1.4 billion people."
+    }
+  ]
+  

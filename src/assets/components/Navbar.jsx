@@ -39,9 +39,8 @@ function Navbar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-           
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleNavigation(`/${item.toLowerCase()}`)}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -55,7 +54,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: '#211d1d',  }}>
+      <AppBar component="nav" sx={{ backgroundColor: '#211d1d' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -75,9 +74,9 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ mr:"20px",color: '#fff' }} onClick={() => handleNavigation(`/${item.toLowerCase()}`)}>
+              <Button key={item} sx={{ mr: '20px', color: '#fff' }} onClick={() => handleNavigation(`/${item.toLowerCase()}`)}>
                 {item}
-              </Button> 
+              </Button>
             ))}
           </Box>
         </Toolbar>
@@ -99,19 +98,15 @@ function Navbar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p:0.7}}>
+      <Box component="main" sx={{ flexGrow: 1, p: 0 }}> {/* Fixed extra padding issue */}
         <Toolbar />
-        
+        {/* Your content goes here */}
       </Box>
     </Box>
   );
 }
 
 Navbar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 
