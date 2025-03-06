@@ -13,6 +13,7 @@ import Country from "./assets/pages/Country";
 import Contact from "./assets/pages/Contact";
 import Error from "./assets/pages/Error";
 import { toast, ToastContainer } from "react-toastify";
+import ImageCarousel from "./assets/components/ImageCarousel";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -48,7 +49,7 @@ const App = () => {
   return (
     <div>
       <RouterProvider router={router} />
-      
+      <ImageCarousel/>
     </div>
   );
 };
