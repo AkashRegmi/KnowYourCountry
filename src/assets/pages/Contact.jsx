@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import { NavLink, useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ const ContactForm = () => {
   };
 
   return (
+    
     <div
       style={{
         display: "flex",

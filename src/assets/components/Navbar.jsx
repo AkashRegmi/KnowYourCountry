@@ -14,11 +14,16 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Country','Contact'];
 
 function Navbar(props) {
+  const navigate = useNavigate();
+  const handleNavigation = (path) => {
+    navigate(path); // ✅ Navigate to the clicked page
+  };
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -34,6 +39,7 @@ function Navbar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
+           
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
@@ -69,7 +75,7 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ mr:"20px",color: '#fff' }}>
+              <Button key={item} sx={{ mr:"20px",color: '#fff' }} onClick={() => handleNavigation(`/${item.toLowerCase()}`)}>
                 {item}
               </Button> 
             ))}
@@ -93,7 +99,7 @@ function Navbar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main" sx={{ p:0.7}}>
         <Toolbar />
         
       </Box>
