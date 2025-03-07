@@ -8,7 +8,7 @@ const Applayout = () => {
     <div>
       <Navbar/>
       <Outlet/>
-      <Footer/>
+      
     </div>
   )
 }
