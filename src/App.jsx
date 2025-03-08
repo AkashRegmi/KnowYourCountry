@@ -14,6 +14,7 @@ import Contact from "./assets/pages/Contact";
 import Error from "./assets/pages/Error";
 import { toast, ToastContainer } from "react-toastify";
 import ImageCarousel from "./assets/components/ImageCarousel";
+import CountryDetail from "./assets/pages/CountryDetail";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -34,6 +35,7 @@ const App = () => {
           path: "/country",
           element: <Country />,
         },
+        { path: "/country/:name", element: <CountryDetail /> }, 
       ],
     },
     {
