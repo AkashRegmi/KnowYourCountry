@@ -8,10 +8,10 @@ const Home = () => {
     <div>
       <Navbar />
       <ImageCarousel />
-      <About/>
-      <Footer/>
+      <About />
+      <Footer />
     </div>
-  );  
+  );
 };
 
 export default Home;

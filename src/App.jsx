@@ -35,7 +35,7 @@ const App = () => {
           path: "/country",
           element: <Country />,
         },
-        { path: "/country/:name", element: <CountryDetail /> }, 
+        { path: "/country/:name", element: <CountryDetail /> },
       ],
     },
     {
@@ -47,8 +47,6 @@ const App = () => {
       element: <Contact />,
     },
   ]);
-
-  const notify = () => toast("Easy in the thing ");
 
   return (
     <div>

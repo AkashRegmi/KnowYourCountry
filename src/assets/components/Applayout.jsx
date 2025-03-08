@@ -1,16 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
 const Applayout = () => {
   return (
     <div>
-      <Navbar/>
-      <Outlet/>
-      
+      <Navbar />
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Applayout
+export default Applayout;

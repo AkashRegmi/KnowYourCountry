@@ -61,7 +61,7 @@ const CountryDetail = () => {
             alt={`${country.name.common} Flag`}
             style={{
               width: "100%",
-              height: "200px",
+              height: "250px",
               objectFit: "cover",
               borderRadius: "8px",
             }}
